@@ -1,0 +1,70 @@
+players_can_see_others_player_quests: false
+max_quest: 1
+quest_identifier_type: integer # or string
+
+default_quest_description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+
+messages:
+  prefix: "§f[§b§lQuêtes§r§f]"
+
+  permission_error: "§cVous n'avez pas la permission de faire cela."
+  quest_not_found: "§cLa quête n'a pas été trouvée, ou elle n'existe pas. faite §f/quests list §cpour voir les quêtes disponibles."
+  quest_exists: "§cLa quête §f{QUEST_NAME} §cexiste déjà."
+  quest_player_not_found: "§cLe joueur §f{PLAYER} §cn'a pas été trouvé."
+  quest_already_started: "§cLe joueur a déjà commencé la quête."
+  quest_already_validated: "§cLe joueur a déjà terminé la quête."
+  quest_validated: "Vous avez terminé la quête §e{QUEST_NAME} §f!"
+  quest_validate: "Vous venez de validé l'étape §e{STEP} §fde la quête §e{QUEST_NAME} §f!"
+  quest_not_started: "Il n'a pas encore commencé la quête."
+
+  quest_created: "Vous venez de créer la quête §e{QUEST_NAME} §favec succès, son identifiant est §e{QUEST_ID}§f."
+  quest_deleted: "Vous venez de supprimer la quête §e{QUEST_NAME} §favec succès."
+  quest_updated: "Vous venez de mettre à jour la quête §e{QUEST_NAME} §favec succès."
+  quest_copied: "Vous venez de copier la quête §e{QUEST_NAME} §fsous le nouveau nom §e{NEW_QUEST_NAME} §favec succès."
+  quest_renamed: "Vous venez de renommer la quête §e{OLD_QUEST_NAME} §favec succès en §e{NEW_QUEST_NAME}§f."
+
+  quest_no_steps: "§cLa quête ne contient aucunes étapes."
+  quest_step_added: "Vous venez de rajouter une étape à la quête §e{QUEST_NAME} §favec succès, il y en à présent §e{STEP_COUNT} §fétapes."
+  quest_step_deleted: "Vous venez de supprimer une étape à la quête §e{QUEST_NAME} §favec succès, il y en a présent maintenant §e{STEP_COUNT} §fétapes."
+
+  quest_max_started: "§cIl a déjà le nombre maximum de quêtes en cours (§l1§r§c)."
+  quest_max_force_started: "§fVous venez de forcer le joueur §e{PLAYER} §fà commencer la quête §e{QUEST_NAME}§f."
+
+  quest_list_header: "§f- Liste des quêtes -"
+  quest_list_footer: "§f§l» §r§fIl y a actuellement §e{COUNT} §fquêtes."
+
+  quest_list_empty: "§fAucune quête n'a été créée."
+  quest_list_line: "§f#{NUMBER}. §e{QUEST_NAME} §f(§e{QUEST_ID}§f)"
+
+  quest_start: "Vous venez de commencer la quête §e{QUEST_NAME} §fdu joueur §e{PLAYER} §favec succès."
+
+  player_already_step: "§cLe joueur §f{PLAYER} §cest déjà sur l'étape §f{STEP} §cde la quête §f{QUEST_NAME}§c."
+  quest_set_step: "Vous venez de définir l'étape §e{STEP} §cde la quête §f{QUEST_NAME} §cdu joueur §f{PLAYER} §cavec succès."
+
+  quest_step_higher: "§cL'étape actuelle est plus élevée que l'étape que vous voulez définir."
+  quest_step_high: "§cLa quête n'a pas ce nombre de quêtes."
+
+  quest_description_set: "Vous venez de définir la description de la quête §e{QUEST_NAME} §favec succès.\n§e§l» §r{DESCRIPTION}"
+form:
+  title: "Quêtes de {PLAYER}"
+  description: "Liste des quêtes terminées et en cours"
+
+  step_text_none: "§cAucune étapes disponibles pour cette quête."
+  steps_text: "Étapes de la quête: §e{STEP_COUNT} §fsur §e{MAX_STEP_COUNT}"
+
+  description_quest_page: "§e§l- §rQuête: {NAME}\n\n§e§l» §r{STEP_TEXT}\n\n§e§l- §rDescription: {DESCRIPTION}"
+
+  button_completed: "Quêtes terminées ({COUNT})"
+  button_in: "Quêtes en cours ({COUNT})"
+
+  title_in: "Quêtes en cours de {PLAYER}"
+  description_in: "Liste des quêtes qui sont en cours"
+  title_completed: "Quêtes terminées de {PLAYER}"
+  description_completed: "Liste des quêtes terminées"
+images:
+  exemple_quest:
+    type: path
+    path: "textures/items/apple"
+  exemple_quest_2:
+    type: url
+    path: "textures/items/stick"

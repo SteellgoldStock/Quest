@@ -1,0 +1,10 @@
+name: Quest
+description: "Quest is a plugin that allows you to create easy quests"
+version: "1.0.0"
+api: 4.0.0
+author: "Steellg0ld"
+main: steellgold\quest\QT
+
+permissions:
+  quest.command:
+    default: op
